@@ -47,7 +47,7 @@ from networksecurity.logging.logger import logger
 load_dotenv()
 
 # Get MongoDB Connection URL
-MONGODB_URL = os.getenv("MONGODB_URL")
+MONGODB_URL = os.getenv("URI")
 
 # SSL Certificate Path
 # Used for secure connection with MongoDB Atlas
@@ -160,7 +160,7 @@ class NetworkDataExtract:
 
 if __name__ == "__main__":
 
-    FILE_PATH = "network_data/phisingData.csv"
+    FILE_PATH = "Network_Data/phisingData.csv"
 
     DATABASE = "NetworkSecurity"
 
